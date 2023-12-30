@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OIL BOYS</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OIL BOYS</title>
 </head>
 <body>
-    <div id="video-container" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: black;">
-        <iframe id="video-iframe" width="100%" height="100%" src="https://www.youtube.com/embed/rk8Z3qkHfIs?autoplay=1=1&controls=1" frameborder="0" allowfullscreen></iframe>
-    </div>
+  <div id="video-container" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: black;">
+    <iframe id="video-iframe" width="100%" height="100%" src="https://www.youtube.com/embed/rk8Z3qkHfIs?autoplay=1" frameborder="0" allowfullscreen></iframe>
+  </div>
 
-    <div style="position: absolute; bottom: 10px; left: 10px; padding: 10px; background-color: #000; border-radius: 5px;">
-        <a href="https://www.instagram.com/oilboys.pt/" target="_blank" style="color: #007bff; text-decoration: none;">
-            <i class="fab fa-instagram"></i> Follow on Instagram
-        </a>
-    </div>
+  <div style="position: absolute; bottom: 10px; left: 10px; padding: 10px; background-color: #000; border-radius: 5px;">
+    <a href="https://www.instagram.com/oilboys.pt/" target="_blank" style="color: #007bff; text-decoration: none;">
+      <img src="./instagram.svg" alt="Instagram Logo" style="margin-right: 5px;">
+      Follow on Instagram
+    </a>
+  </div>
 
-    <script>
-        // Add a listener for when the video is loaded
-        const videoIframe = document.getElementById('video-iframe');
-        videoIframe.addEventListener('load', function() {
-            videoIframe.play();
-        });
-    </script>
+  <script>
+    // Add a listener for when the video is loaded
+    const videoIframe = document.getElementById('video-iframe');
+    videoIframe.addEventListener('load', function() {
+      videoIframe.play();
+    });
+  </script>
 </body>
 </html>
