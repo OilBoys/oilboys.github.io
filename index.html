@@ -5,11 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Oil Boys</title>
   <style>
-    /* Full-screen video */
+    /* Background video */
     video {
-      width: 100%;
-      height: 100%;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
       object-fit: cover;
+      z-index: -1;
     }
 
     /* Instagram icon */
@@ -36,7 +40,7 @@
       display: none;
     }
 
-    /* Show Instagram link when hover over icon */
+    /* Show Instagram link when click on the icon */
     #instagram-icon:hover #instagram-link {
       display: block;
       position: absolute;
@@ -52,9 +56,14 @@
   </style>
 </head>
 <body>
-  <video poster="https://i.ytimg.com/vi/unYFwMpEKVQ/maxresdefault.jpg" src="https://www.youtube.com/embed/unYFwMpEKVQ" autoplay loop muted></video>
+  <video muted poster="https://i.ytimg.com/vi/unYFwMpEKVQ/maxresdefault.jpg" src="https://www.youtube.com/embed/unYFwMpEKVQ" playsinline autoplay loop></video>
   <div id="instagram-icon">
-    <span id="instagram-link">Instagram</span>
+    <a href="https://www.instagram.com/oilboys.pt" id="instagram-link">Instagram</a>
   </div>
+
+  <script>
+    const video = document.querySelector('video');
+    video.muted = false;
+  </script>
 </body>
 </html>
