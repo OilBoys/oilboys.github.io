@@ -12,21 +12,49 @@
       object-fit: cover;
     }
 
-    /* Instagram link */
-    #instagram-link {
+    /* Instagram icon */
+    #instagram-icon {
       position: fixed;
       bottom: 20px;
       right: 20px;
+      width: 40px;
+      height: 40px;
+      background-image: url("https://www.freepik.com/free-photos-vectors/instagram");
+      background-size: cover;
+      background-repeat: no-repeat;
+      cursor: pointer;
+    }
+
+    /* Hover effect on Instagram icon */
+    #instagram-icon:hover {
+      background-color: #007bff;
+      border-radius: 5px;
+    }
+
+    /* Link to Instagram profile */
+    #instagram-link {
+      display: none;
+    }
+
+    /* Show Instagram link when hover over icon */
+    #instagram-icon:hover #instagram-link {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: 0;
       padding: 10px 20px;
       background-color: #007bff;
       color: white;
       text-decoration: none;
       border-radius: 5px;
+      z-index: 1;
     }
   </style>
 </head>
 <body>
   <video poster="https://i.ytimg.com/vi/unYFwMpEKVQ/maxresdefault.jpg" src="https://www.youtube.com/embed/unYFwMpEKVQ" autoplay loop muted></video>
-  <a href="https://www.instagram.com/oilboys.pt" id="instagram-link">Follow us on Instagram</a>
+  <div id="instagram-icon">
+    <span id="instagram-link">Instagram</span>
+  </div>
 </body>
 </html>
