@@ -1,69 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Oil Boys</title>
-  <style>
-    /* Background video */
-    video {
-      position: fixed;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      object-fit: cover;
-      z-index: -1;
-    }
-
-    /* Instagram icon */
-    #instagram-icon {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      width: 40px;
-      height: 40px;
-      background-image: url("https://www.freepik.com/free-photos-vectors/instagram");
-      background-size: cover;
-      background-repeat: no-repeat;
-      cursor: pointer;
-    }
-
-    /* Hover effect on Instagram icon */
-    #instagram-icon:hover {
-      background-color: #007bff;
-      border-radius: 5px;
-    }
-
-    /* Link to Instagram profile */
-    #instagram-link {
-      display: none;
-    }
-
-    /* Show Instagram link when click on the icon */
-    #instagram-icon:hover #instagram-link {
-      display: block;
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      padding: 10px 20px;
-      background-color: #007bff;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      z-index: 1;
-    }
-  </style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Oil Boys</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background-color: black;
+			color: white;
+			font-family: Arial, sans-serif;
+		}
+		video {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	</style>
 </head>
 <body>
-  <video muted poster="https://i.ytimg.com/vi/unYFwMpEKVQ/maxresdefault.jpg" src="https://www.youtube.com/embed/unYFwMpEKVQ" playsinline autoplay loop></video>
-  <div id="instagram-icon">
-    <a href="https://www.instagram.com/oilboys.pt" id="instagram-link">Instagram</a>
-  </div>
-
-  <script>
-    const video = document.querySelector('video');
-    video.muted = false;
-  </script>
+	<video autoplay loop>
+		<source src="https://www.youtube.com/watch?v=unYFwMpEKVQ" type="video/mp4">
+	</video>
 </body>
 </html>
