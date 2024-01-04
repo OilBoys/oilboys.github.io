@@ -23,8 +23,10 @@
 	</style>
 </head>
 <body>
-	<video autoplay controls>
-		<source src="https://www.youtube.com/watch?v=unYFwMpEKVQ" type="video/mp4">
-	</video>
+	<video autoplay controls id="myVideo"></video>
+	<script>
+		var video = document.getElementById("myVideo");
+		video.src = "https://www.youtube.com/watch?v=unYFwMpEKVQ";
+	</script>
 </body>
 </html>
