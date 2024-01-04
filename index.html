@@ -3,15 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OIL BOYS</title>
+  <title>Oil Boys</title>
+  <style>
+    /* Full-screen video */
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Instagram link */
+    #instagram-link {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+  </style>
 </head>
 <body>
-  <iframe width="auto" height="80%" src="https://www.youtube.com/embed/rk8Z3qkHfIs?autoplay=1" frameborder="0" allowfullscreen mozallowfullscreen msallowfullscreen webkitallowfullscreen></iframe>
-
-  <div style="position: absolute; bottom: 10px; left: 10px; padding: 10px; background-color: #000; border-radius: 5px;">
-    <a href="https://www.instagram.com/oilboys.pt/" target="_blank" style="color: #007bff; text-decoration: none;">
-      Instagram.com/OilBoys.PT
-    </a>
-  </div>
+  <video poster="https://i.ytimg.com/vi/unYFwMpEKVQ/maxresdefault.jpg" src="https://www.youtube.com/embed/unYFwMpEKVQ" autoplay loop muted></video>
+  <a href="https://www.instagram.com/oilboys.pt" id="instagram-link">Follow us on Instagram</a>
 </body>
 </html>
