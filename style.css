@@ -31,35 +31,6 @@ body {
     }
 }
 
-/* (A) FORCE ALL ITEMS INTO SINGLE ROW */
-.hmove {
-    display: flex;
-}
-.hitem {
-    width: 100%;
-    flex-shrink: 0;
-}
-.hwrap {
-    overflow: hidden;
-}
-
-/* (B) MOVE ITEMS FROM RIGHT TO LEFT */
-/* first item = 0, fourth item = -300% */
-@keyframes tickerh {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(-400%);
-    }
-}
-.hmove {
-    animation: tickerh linear 60s infinite;
-}
-.hmove:hover {
-    animation-play-state: paused;
-}
-
 .section {
     max-width: 800px;
     margin: 20px auto;
@@ -217,7 +188,7 @@ body {
 
 .footer {
     width: 70%;
-    height: auto;
+    height: 21vh;
     font-size: 1.5em;
     line-height: 1.5;
     color: #fff;
@@ -226,7 +197,6 @@ body {
     flex-direction: column; /* Set the flex direction to column */
     align-items: center;
     justify-content: center;
-    margin: 1em;
 }
 
 .footer p {
