@@ -197,6 +197,7 @@ body {
     flex-direction: column; /* Set the flex direction to column */
     align-items: center;
     justify-content: center;
+    margin: auto;
 }
 
 .footer p {
